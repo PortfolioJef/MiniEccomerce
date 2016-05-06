@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwEcommerce", "SwEcommerce\SwEcommerce.csproj", "{7F74C23D-A360-4665-A87A-236D14E3B954}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwEcommerce", "SwEcommerce\SwEcommerce.csproj", "{287BF3E7-6A5B-4F7D-97C0-3078CF87493F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F74C23D-A360-4665-A87A-236D14E3B954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F74C23D-A360-4665-A87A-236D14E3B954}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F74C23D-A360-4665-A87A-236D14E3B954}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F74C23D-A360-4665-A87A-236D14E3B954}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287BF3E7-6A5B-4F7D-97C0-3078CF87493F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287BF3E7-6A5B-4F7D-97C0-3078CF87493F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287BF3E7-6A5B-4F7D-97C0-3078CF87493F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287BF3E7-6A5B-4F7D-97C0-3078CF87493F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
