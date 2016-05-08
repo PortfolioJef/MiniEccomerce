@@ -1,4 +1,4 @@
-﻿namespace FluentNhibernateMVC.Models
+﻿namespace SwEcommerce.Models
 {
     public class Produtos
     {

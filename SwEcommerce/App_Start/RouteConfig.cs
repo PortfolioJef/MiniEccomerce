@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace FluentNhibernateMVC
+namespace SwEcommerce
 {
     public class RouteConfig
     {
@@ -16,7 +16,7 @@ namespace FluentNhibernateMVC
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Produtos", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Inicial", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -11,7 +11,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluentNhibernateMVC</RootNamespace>
+    <RootNamespace>SwEcommerce</RootNamespace>
     <AssemblyName>FluentNhibernateMVC</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
@@ -155,6 +155,8 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CarrinhoController.cs" />
+    <Compile Include="Controllers\InicialController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -219,6 +221,8 @@
     <Content Include="Views\Produtos\Edit.cshtml" />
     <Content Include="Views\Produtos\Details.cshtml" />
     <Content Include="Views\Produtos\Delete.cshtml" />
+    <Content Include="Views\Inicial\Index.cshtml" />
+    <Content Include="Views\Carrinho\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
