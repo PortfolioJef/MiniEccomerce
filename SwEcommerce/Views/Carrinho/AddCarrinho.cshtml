@@ -1,5 +1,5 @@
 ﻿@model SwEcommerce.Models.Produtos
-@using (Html.BeginForm())
+@using (Html.BeginForm(Model))
 {
     @Html.AntiForgeryToken()
 
@@ -7,7 +7,7 @@
     <script type="text/javascript">
 
         function RecPrd(idPrd) {
-
+            if (idPrd > 0){
             $.ajax({
                 dataType: "json",
                 type: "POST",
@@ -16,8 +16,8 @@
                 success: function (dados) {
                     $("#txtPreco").val(dados.Preco);
                     $("#Nome").val(dados.Nome);
-                }
-            })
+            }});
+            }
         };
 
     </script>
@@ -40,7 +40,7 @@
 
             <tr>
                 <td>
-                   @Html.DropDownListFor(model=>model.identificador, new SelectList(ViewBag.Produtoss, "identificador", "Nome"),
+                   @Html.DropDownListFor(model=>model.identificador, new SelectList(ViewBag.Produtoss, "identificador", "Nome",""),
                             new { @onchange = "RecPrd(this.value)" })
                   
                   </td>
@@ -64,7 +64,7 @@
                 </td>
             </tr>
         </table>
-
+        <hr />
     </div>
 }
 

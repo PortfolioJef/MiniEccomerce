@@ -227,7 +227,6 @@
     <Content Include="Views\Produtos\Delete.cshtml" />
     <Content Include="Views\Inicial\Index.cshtml" />
     <Content Include="Views\Carrinho\AddCarrinho.cshtml" />
-    <Content Include="Views\Produtos\ListarCompras.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

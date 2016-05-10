@@ -13,8 +13,8 @@ namespace SwEcommerce.Models
        
     }
     public class Carrinho
-    {
-        public IEnumerable<Produtos> Compras { get; set; }
+    {        
+    
     }  
 
 }
