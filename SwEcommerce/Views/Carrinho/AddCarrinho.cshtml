@@ -1,0 +1,70 @@
+﻿@model SwEcommerce.Models.Produtos
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function RecPrd(idPrd) {
+
+            $.ajax({
+                dataType: "json",
+                type: "POST",
+                url: "/Carrinho/GetDadosProdutos",
+                data: { id: idPrd },
+                success: function (dados) {
+                    $("#txtPreco").val(dados.Preco);
+                    $("#Nome").val(dados.Nome);
+                }
+            })
+        };
+
+    </script>
+
+    <div class="form-horizontal">
+        <h4>Produtos</h4>
+       
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        
+        <table class="table">
+            <tr>
+                <th>Item</th>                
+                                
+                <th>Quantidade</th>
+
+                <th> Preco</th>
+
+                <th> Promoção</th>
+            </tr>
+
+            <tr>
+                <td>
+                   @Html.DropDownListFor(model=>model.identificador, new SelectList(ViewBag.Produtoss, "identificador", "Nome"),
+                            new { @onchange = "RecPrd(this.value)" })
+                  
+                  </td>
+                    @Html.HiddenFor(model => model.Nome)
+               
+                <td>
+                    @Html.EditorFor(model => model.Quantidade, new { htmlAttributes = new { @class = "", @Id = "TxtQuantidade" } })
+                </td>
+
+                <td>
+                    @Html.EditorFor(model => model.Preco, new { htmlAttributes = new { @class = "", @Id = "txtPreco" } })
+                </td>
+                <td>
+                    @Html.DropDownListFor(model=>model.PromoId, new SelectList(ViewBag.Promocoes, "value", "Text"),
+                                 new { htmlAttributes = new { @class = "" } })
+
+                </td>
+
+                <td>                
+                    <input type="submit" value="Adicione ao carrinho" class="btn btn-default" />
+                </td>
+            </tr>
+        </table>
+
+    </div>
+}
+

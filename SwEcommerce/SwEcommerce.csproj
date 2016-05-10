@@ -205,7 +205,11 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\SwEcommerce.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Carrinho\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -222,7 +226,8 @@
     <Content Include="Views\Produtos\Details.cshtml" />
     <Content Include="Views\Produtos\Delete.cshtml" />
     <Content Include="Views\Inicial\Index.cshtml" />
-    <Content Include="Views\Carrinho\Index.cshtml" />
+    <Content Include="Views\Carrinho\AddCarrinho.cshtml" />
+    <Content Include="Views\Produtos\ListarCompras.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
