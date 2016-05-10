@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SwEcommerce.Models.Produtos>
+
+@{
+    ViewBag.Title = "Produtos";
+}
+
+
+<br />
+<p>
+    @Html.ActionLink("Novo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.identificador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            Preço
+        </th>
+              <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.identificador)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Preco)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.identificador }) ||
+                        @Html.ActionLink("Deletar", "Delete", new { id = item.identificador })
+        </td>
+    </tr>
+}
+
+</table>
